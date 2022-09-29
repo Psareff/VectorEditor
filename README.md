@@ -19,7 +19,6 @@ Circle:
 Canvas have these attributes:
 - Size on X axis
 - Size on Y axis
-- 
 #------------------------------------------------------------------------------
 
 To do:
