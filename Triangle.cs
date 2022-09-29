@@ -7,8 +7,11 @@ using System.Threading.Tasks;
 public class Triangle : Figure
 {
     Tuple<double, double> _FirstVertex, _SecondVertex, _ThirdVertex;
+
     Tuple<double, double> _FirstSide, _SecondSide, _ThirdSide;
+
     double FirstSideLength, SecondSideLength, ThirdSideLength;
+
     const double EPSILON = 0.001;
 
     public Tuple<double, double> FirstVertex
@@ -42,6 +45,7 @@ public class Triangle : Figure
     public Triangle((double, double) FirstVertex, (double, double) SecondVertex, (double, double) ThirdVertex, Color fillColorRGBA, Color contourColorRGBA)
         : base(fillColorRGBA, contourColorRGBA)
     {
+        /*
         _FirstVertex = Tuple.Create(FirstVertex.Item1, FirstVertex.Item2);
         if (SecondVertex != FirstVertex)
             _SecondVertex = Tuple.Create(SecondVertex.Item1, SecondVertex.Item2);
@@ -62,13 +66,22 @@ public class Triangle : Figure
         _SecondSide = new Tuple<double, double>(_ThirdVertex.Item1 - _SecondVertex.Item1, _ThirdVertex.Item2 - _SecondVertex.Item2);
         _ThirdSide = new Tuple<double, double>(_FirstVertex.Item1 - _ThirdVertex.Item1, _FirstVertex.Item2 - _ThirdVertex.Item2);
 
+        */
+
+        if ((ThirdVertex.Item1 - FirstVertex.Item1) * (SecondVertex.Item2 - FirstVertex.Item1) -
+            (ThirdVertex.Item2 - FirstVertex.Item2) * (SecondVertex.Item1 - FirstVertex.Item1) <= EPSILON)
+            throw new SystemException("Invalid Vertexes");
+        _FirstVertex = Tuple.Create(FirstVertex.Item1, FirstVertex.Item2);
+        _SecondVertex = Tuple.Create(SecondVertex.Item1, SecondVertex.Item2);
+        _ThirdVertex = Tuple.Create(ThirdVertex.Item1, ThirdVertex.Item2);
+
+        _FirstSide = new Tuple<double, double>(_SecondVertex.Item1 - _FirstVertex.Item1, _SecondVertex.Item2 - _FirstVertex.Item2);
+        _SecondSide = new Tuple<double, double>(_ThirdVertex.Item1 - _SecondVertex.Item1, _ThirdVertex.Item2 - _SecondVertex.Item2);
+        _ThirdSide = new Tuple<double, double>(_FirstVertex.Item1 - _ThirdVertex.Item1, _FirstVertex.Item2 - _ThirdVertex.Item2);
+
         FirstSideLength = Math.Sqrt(Math.Pow(_FirstSide.Item1, 2) + Math.Pow(_FirstSide.Item2, 2));
         SecondSideLength = Math.Sqrt(Math.Pow(_SecondSide.Item1, 2) + Math.Pow(_SecondSide.Item2, 2));
         ThirdSideLength = Math.Sqrt(Math.Pow(_ThirdSide.Item1, 2) + Math.Pow(_ThirdSide.Item2, 2));
-
-
-
-
     }
     public Triangle()
     {
