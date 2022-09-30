@@ -1,0 +1,15 @@
+D:\Programming\Lab1_CSharp\Lab1_CSharp\bin\Debug\net6.0\Lab1_CSharp.exe
+D:\Programming\Lab1_CSharp\Lab1_CSharp\bin\Debug\net6.0\Lab1_CSharp.deps.json
+D:\Programming\Lab1_CSharp\Lab1_CSharp\bin\Debug\net6.0\Lab1_CSharp.runtimeconfig.json
+D:\Programming\Lab1_CSharp\Lab1_CSharp\bin\Debug\net6.0\Lab1_CSharp.dll
+D:\Programming\Lab1_CSharp\Lab1_CSharp\bin\Debug\net6.0\ref\Lab1_CSharp.dll
+D:\Programming\Lab1_CSharp\Lab1_CSharp\bin\Debug\net6.0\Lab1_CSharp.pdb
+D:\Programming\Lab1_CSharp\Lab1_CSharp\obj\Debug\net6.0\Lab1_CSharp.csproj.AssemblyReference.cache
+D:\Programming\Lab1_CSharp\Lab1_CSharp\obj\Debug\net6.0\Lab1_CSharp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\Lab1_CSharp\Lab1_CSharp\obj\Debug\net6.0\Lab1_CSharp.AssemblyInfoInputs.cache
+D:\Programming\Lab1_CSharp\Lab1_CSharp\obj\Debug\net6.0\Lab1_CSharp.AssemblyInfo.cs
+D:\Programming\Lab1_CSharp\Lab1_CSharp\obj\Debug\net6.0\Lab1_CSharp.csproj.CoreCompileInputs.cache
+D:\Programming\Lab1_CSharp\Lab1_CSharp\obj\Debug\net6.0\Lab1_CSharp.dll
+D:\Programming\Lab1_CSharp\Lab1_CSharp\obj\Debug\net6.0\ref\Lab1_CSharp.dll
+D:\Programming\Lab1_CSharp\Lab1_CSharp\obj\Debug\net6.0\Lab1_CSharp.pdb
+D:\Programming\Lab1_CSharp\Lab1_CSharp\obj\Debug\net6.0\Lab1_CSharp.genruntimeconfig.cache
